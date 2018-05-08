@@ -23,6 +23,7 @@
 // });
 Route::middleware(['web', 'auth'])->group(function () {
 	// Route::prefix('admin')->group(function() {
+		Route::get('/', 'UsersController@dashboard');
 		Route::get('dashboard', ['uses' => 'UsersController@dashboard', 'as' => 'dashboard']);
 
 		// Route Books

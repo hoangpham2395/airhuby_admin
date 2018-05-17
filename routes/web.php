@@ -34,7 +34,6 @@ Route::middleware(['web', 'auth'])->group(function () {
 		Route::post('categories', ['uses' => 'CategoriesController@store', 'as' => 'categories.store']);
 		Route::delete('categories/{category}', ['uses' => 'CategoriesController@destroy', 'as' => 'categories.destroy']);
 		Route::patch('categories/{category}', ['uses' => 'CategoriesController@update', 'as' => 'categories.update']);
-		// Route::get('categories/{category}', function () { return view('layouts.404'); });
 
 		// Route Users
 		Route::resource('users', 'UsersController');

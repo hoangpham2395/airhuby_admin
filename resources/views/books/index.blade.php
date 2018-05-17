@@ -86,7 +86,7 @@
           <tr>
            <td class="text-center">{{ $no }}</td>
            <td>{{ $book->book_title }}</td>
-           <td>{{ $book->book_content }}</td>
+           <td><span class="book_content"> {{ $book->book_content }}</span></td>
            <td>{{ $book->category_name }}</td>
            <td>{{ $book->book_price }}</td>
            <td><a href='{{ asset("books/$book->book_id") }}' class="btn btn-sm btn-primary"><i class="fa fa-list"></i></a></td>
